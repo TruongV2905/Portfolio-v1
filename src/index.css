@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import "tailwindcss";
+:root {
+  --background-color: #000000;
+  --natural-color: #efece3;
+  --accent-color: #8fabd4;
+  --highlight-color: #4a70a9;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--background-color);
+  color: var(--highlight-color);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
