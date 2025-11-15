@@ -1,34 +1,13 @@
 import { Facebook, Github, Linkedin } from "lucide-react";
 import IconCard from "./IconCard";
-import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLocation } from "react-router-dom";
+import { useScrollTrigger } from "../hook/useScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
 function AboutMeSection() {
-  const [scrolled, setScrolled] = useState(false);
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const trigger = ScrollTrigger.create({
-      trigger: sectionRef.current,
-      start: "top 80%",
-      end: "bottom 20%",
-      onEnter: () => setScrolled(true),
-      onEnterBack: () => setScrolled(true),
-      onLeave: () => setScrolled(false),
-      onLeaveBack: () => setScrolled(false),
-    });
-
-    return () => trigger.kill();
-  }, []);
+  const { ref, scrolled } = useScrollTrigger();
 
   return (
     <section
-      ref={sectionRef}
+      ref={ref}
       id="about"
       className="container mx-auto my-5 py-20 px-1 w-full h-screen flex items-end justify-center space-x-6"
     >

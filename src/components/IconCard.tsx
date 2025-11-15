@@ -14,7 +14,7 @@ function IconCard({
         flex items-center justify-center 
         transition-all duration-500 group 
         hover:bg-[linear-gradient(to_bottom_right,var(--highlight-color),var(--accent-color))]
-        hover:border-transparent hover:shadow-lg hover:shadow-green-500/50
+        hover:border-transparent  hover:shadow-[0px_0_30px_var(--highlight-color)]
       "
     >
       <Icon

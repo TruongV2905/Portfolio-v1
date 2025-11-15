@@ -1,8 +1,10 @@
+import { useScrollTrigger } from "../hook/useScrollTrigger";
 import LightRays from "./LightRays";
 import "animate.css";
 function HeroSection() {
+  const { ref, scrolled } = useScrollTrigger();
   return (
-    <section className="w-full mx-auto h-screen relative text-white">
+    <section ref={ref} className="w-full mx-auto h-screen relative text-white">
       <div className="hidden md:block absolute top-0 left-0 w-full h-full z-0">
         <LightRays
           raysOrigin="top-center"
@@ -27,10 +29,10 @@ function HeroSection() {
       </div>
 
       <div className="flex flex-col justify-center items-center absolute inset-0 text-center px-4">
-        <h1 className="text-5xl font-bold mb-4 animate__animated animate__backInDown">
+        <h1 className={`text-5xl font-bold mb-4 ${scrolled ? "animate__animated animate__backInDown" : ""}`}>
           Welcome to My Portfolio
         </h1>
-        <p className="text-xl mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+        <p className={`text-xl mb-8 ${scrolled ? "animate__animated animate__fadeInUp animate__delay-1s" : ""}`}>
           Showcasing my projects and skills
         </p>
         <a

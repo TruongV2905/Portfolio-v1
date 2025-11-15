@@ -1,6 +1,7 @@
 import AboutMeSection from "../components/AboutMeSection";
 import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
+import ServiceSection from "../components/ServiceSection";
 import HomePageLayout from "../layouts/HomePageLayout";
 
 function Homepage() {
@@ -8,6 +9,7 @@ function Homepage() {
     <HomePageLayout>
       <HeroSection />
       <AboutMeSection />
+      <ServiceSection />
       <ProjectSection />
     </HomePageLayout>
   );
