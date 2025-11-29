@@ -73,7 +73,7 @@ function AboutMeSection() {
 
         {/* Image */}
         <img
-          src="/public/person.png"
+          src="/person.png"
           alt=""
           className="w-[90%] object-cover object-center h-auto relative z-1"
         />
