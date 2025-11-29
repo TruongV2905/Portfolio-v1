@@ -7,6 +7,7 @@ function IconCard({
 }) {
   return (
     <a
+      target="_blank"
       href={href}
       className="
         w-14 h-14 rounded-xl border border-white/20 

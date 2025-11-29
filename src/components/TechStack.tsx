@@ -19,7 +19,6 @@ import {
   SiRedis,
   SiMysql,
   SiSpringboot,
-  SiDotnet,
 } from "react-icons/si";
 import { useScrollTrigger } from "../hook/useScrollTrigger";
 
@@ -47,7 +46,6 @@ function TechStack() {
   const backend = [
     { icon: FaJava, color: "#E76F00" },
     { icon: SiSpringboot, color: "#6DB33F" },
-    { icon: SiDotnet, color: "#512BD4" },
     { icon: FaNodeJs, color: "#3C873A" },
   ];
 
@@ -72,7 +70,7 @@ function TechStack() {
       {/* Frontend */}
       <div ref={frontendRef} className="flex flex-col items-center space-y-3">
         <motion.div
-          className="flex space-x-6"
+          className="flex flex-wrap justify-center gap-6 md:space-x-6"
           variants={container}
           initial="hidden"
           animate={frontendVisible ? "visible" : "hidden"}
@@ -95,7 +93,7 @@ function TechStack() {
       {/* Tools */}
       <div ref={toolsRef} className="flex flex-col items-center space-y-3">
         <motion.div
-          className="flex space-x-6"
+          className="flex flex-wrap justify-center gap-6 md:space-x-6"
           variants={container}
           initial="hidden"
           animate={toolsVisible ? "visible" : "hidden"}
@@ -118,7 +116,7 @@ function TechStack() {
       {/* Backend */}
       <div ref={backendRef} className="flex flex-col items-center space-y-3">
         <motion.div
-          className="flex space-x-6"
+          className="flex flex-wrap justify-center gap-6 md:space-x-6"
           variants={container}
           initial="hidden"
           animate={backendVisible ? "visible" : "hidden"}

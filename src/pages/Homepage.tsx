@@ -1,4 +1,5 @@
 import AboutMeSection from "../components/AboutMeSection";
+import ContactMeSection from "../components/ContactMeSection";
 import HeroSection from "../components/HeroSection";
 import ProjectSection from "../components/ProjectSection";
 import ServiceSection from "../components/ServiceSection";
@@ -11,6 +12,7 @@ function Homepage() {
       <AboutMeSection />
       <ServiceSection />
       <ProjectSection />
+      <ContactMeSection />
     </HomePageLayout>
   );
 }

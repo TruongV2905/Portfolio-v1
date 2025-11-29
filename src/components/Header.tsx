@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import type { navigate } from "../models/model";
@@ -30,7 +30,7 @@ function Header() {
                 key={item.to}
                 className={`cursor-pointer hover:text-(--highlight-color) duration-300 ${
                   location.pathname === item.to
-                    ? "text-(--highlight-color) font-semibold"
+                    ? "text-(--highlight-color) font-semibold"  
                     : ""
                 }`}
               >
