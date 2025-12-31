@@ -38,6 +38,18 @@ function ProjectSection() {
               description="A Netflix-style web clone that provides a movie-browsing interface with categorized lists, detail pages, and streaming-like previews. The site replicates the core layout, thumbnails, and UI patterns of Netflix to demonstrate front-end design and media-catalog functionality."
             />,
             <CardDetail
+              imgSrc="/Fodoshi.png"
+              url="https://fodoshi-delta.vercel.app/"
+              title="Fodoshi"
+              description="A simple website introducing a consignment clothing store that offers stylish, pre-loved fashion items for all ages. The platform allows users to browse, buy, and consign quality clothing easily, promoting sustainability and smart shopping. The project was created by a team of designers and developers working together to build an engaging, user-friendly, and visually appealing e-commerce experience."
+            />,
+            <CardDetail
+              imgSrc="/nummerology.png"
+              url="https://numerology-bice.vercel.app/"
+              title="Numerology"
+              description="A responsive website showcasing a numerology platform that allows users to explore their life paths and personality insights through numbers. The project was created as a showcase product to practice coding and teamwork skills, focusing on an interactive, visually appealing, and user-friendly design."
+            />,
+            <CardDetail
               imgSrc="/beanmind.png"
               url="https://bean-mind-project.vercel.app/"
               title="Beanmind"
